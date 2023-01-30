@@ -1,0 +1,37 @@
+// .IconComponents {
+// display: flex;
+// flex-direction: row-reverse;
+// background-color: aqua;
+// align-items: flex-start;
+// justify-content: flex-start;
+.IconComponents
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width:max-content;
+  margin: 0;
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width:max-content;
+  margin: 0;
+  .icons {
+    height: 5rem;
+    width: 4rem;
+  }
+}
+.details {
+    //   flex: 1;
+    //   background-color: aliceblue;
+      .icons {
+        height: 5rem;
+        width: 4rem;
+      }
+    }
+    // }
+    

@@ -1,0 +1,93 @@
+.table-container {
+	height: 100%;
+	max-height: 100%;
+	// background-color: rgb(218, 187, 250);
+	width: 100%;
+	overflow: auto;
+	// display: flex;
+	& form {
+		min-width: 100vw;
+		display: inline-flex;
+		overflow: auto;
+		flex-direction: column;
+		// align-items: flex-start;
+		justify-content: flex-start;
+
+		.table-row {
+			flex: 1;
+			min-width: 80rem;
+			// max-width: 100vw;
+			display: flex;
+			// align-items: center;
+			justify-content: flex-start;
+			// background-color: aliceblue;
+			border-bottom: 1px solid #000;
+			& > * {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 0.5rem 0;
+				// font-size: 1.25rem;
+				// min-width: 10rem;
+				// max-width: 20%;
+				box-sizing: border-box;
+				border-right: 1px solid black;
+				min-height: 3rem;
+
+				&:last-child {
+					border-right: none;
+				}
+			}
+			.row-data {
+				padding: 0.5rem 1rem;
+				width: 15rem;
+			}
+			.input {
+				padding: 0.5rem 1rem;
+				// border: none;
+				// border-right: thin solid #000;
+				outline: none;
+				box-sizing: border-box;
+				max-height: 3rem;
+			}
+			.select {
+				height: 100%;
+				width: 100%;
+				box-sizing: border-box;
+				outline: none;
+				max-height: 2.5rem;
+			}
+			.row-checkbox {
+				min-width: 4rem;
+			}
+			.row-delete {
+				width: 5rem;
+			}
+			.row-attributes {
+				flex: 1;
+				flex-wrap: wrap;
+				padding: 0.5rem 0.5rem;
+				gap: 0.5rem;
+				.dropdown {
+					height: 100%;
+					display: flex;
+					align-items: center;
+				}
+				.attribute-holder {
+					flex: 1;
+					// background-color: royalblue;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+					flex-wrap: wrap;
+				}
+			}
+		}
+		.table-header {
+			overflow: visible;
+			background-color: #2f3e46;
+			color: white;
+		}
+	}
+}
